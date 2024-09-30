@@ -1,10 +1,15 @@
-import { StatusBar, StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, View } from "react-native";
+import { StatusBar } from "expo-status-bar";
+import { Link } from "expo-router";
 
 export default function App() {
   return (
     <View style={styles.container}>
       <Text>Auora!</Text>
       <StatusBar style="auto" />
+      <Link href="/profile" style={{ color: "blue" }}>
+        Go To Profile
+      </Link>
     </View>
   );
 }
